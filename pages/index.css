@@ -4,7 +4,6 @@ body {
 
 .page {
   width: 100%;
-  min-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
@@ -36,7 +35,7 @@ body {
 
 .nav__logo {
   width: 105px;
-  height: 30px;
+  height: 39px;
 }
 
 .nav__links {
@@ -58,18 +57,17 @@ body {
   font-family: "Noto Serif", serif;
   font-size: 58px;
   line-height: 72px;
-  margin-top: 183px;
-  margin-left: 80px;
 }
 
 .header__title {
-  font-size: 68px;
+  font-size: 58px;
   line-height: 72px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Serif", serif;
   margin-left: 80px;
-  margin-top: 0;
+  margin-top: 183px;
   margin-bottom: 28px;
+  letter-spacing: 1px;
 }
 
 .header__description {
@@ -77,7 +75,7 @@ body {
   max-width: 683px;
   margin-left: 80px;
   margin-top: 28px;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", serif;
 }
 
 .header__image {
@@ -94,7 +92,7 @@ body {
   align-items: flex-end;
   margin: 0px 80px 40px 80px;
   margin-top: auto;
-  color: #838383;
+  color: #6f6f6f;
   font-family: "Inter";
 }
 
