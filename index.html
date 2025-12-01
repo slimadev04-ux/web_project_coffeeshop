@@ -22,12 +22,97 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo da cafeteria Um Cafezinho"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#" class="nav__link">Receitas</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Reservar&nbsp;uma&nbsp;mesa</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <div class="header__content-text">
+            <span class="header__span-accent">Café especial</span>
+            <h1 class="header__title">
+              na&nbsp;biblioteca&nbsp;Triple&nbsp;Peaks
+            </h1>
+            <p class="header__description">
+              Esta é a nossa zona de estudo! Temos aquele cafezinho para
+              energizar você e vibrações aconchegantes para soltar a
+              criatividade.
+            </p>
+          </div>
+          <img
+            src="./images/inside_coffee_shop.png"
+            alt="imagem do espaço de café"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <div>
+            <ul class="footer__list">
+              <li class="footer__list-item">Hórarios:</li>
+              <li class="footer__list-item">Dias úteis: 9h - 20h</li>
+              <li class="footer__list-item">Finais de semana: 10h - 18h</li>
+            </ul>
+          </div>
+          <p class="header__paragraph">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"></section>
+        <section class="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/5yCqhY1D-VE?si=nGvMab6EnaDKNQle"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <p class="description">
+                How to Communicate <span class="time">~2 min</span>
+              </p>
+            </div>
+
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/ikehX9o1JbI?si=2c2bpFe0cBt87y0u"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <p class="description">
+                Is SEL and Why SEL Matters <span class="time">~3 min</span>
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="reservetion"></section>
       </main>
       <footer class="footer"></footer>
