@@ -38,47 +38,40 @@
           />
           <ul class="nav__links">
             <li>
-              <a href="#" class="nav__link">Receitas</a>
+              <a href="#recipes" class="nav__link">Receitas</a>
             </li>
             <li>
-              <a href="#" class="nav__link">Reservar&nbsp;uma&nbsp;mesa</a>
+              <a href="#reservation" class="nav__link"
+                >Reservar&nbsp;uma&nbsp;mesa</a
+              >
             </li>
             <li>
               <a href="#" class="nav__link">Contatos</a>
             </li>
           </ul>
         </nav>
-        <div class="header__content">
-          <div class="header__content-text">
-            <span class="header__span-accent">Café especial</span>
-            <h1 class="header__title">
-              na&nbsp;biblioteca&nbsp;Triple&nbsp;Peaks
-            </h1>
-            <p class="header__description">
-              Esta é a nossa zona de estudo! Temos aquele cafezinho para
-              energizar você e vibrações aconchegantes para soltar a
-              criatividade.
-            </p>
-          </div>
-          <img
-            src="./images/inside_coffee_shop.png"
-            alt="imagem do espaço de café"
-            class="header__image"
-          />
-        </div>
+        <span class="header__span-accent">Café especial</span>
+        <h1 class="header__title">na&nbsp;biblioteca&nbsp;Triple&nbsp;Peaks</h1>
+        <p class="header__description">
+          Esta é a nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Ilustração citando a biblioteca Triple Peaks"
+          class="header__image"
+        />
         <div class="header__footer">
           <div>
-            <ul class="footer__list">
-              <li class="footer__list-item">Hórarios:</li>
-              <li class="footer__list-item">Dias úteis: 9h - 20h</li>
-              <li class="footer__list-item">Finais de semana: 10h - 18h</li>
-            </ul>
+            <p class="header__paragraph">Hórarios:</p>
+            <p class="header__paragraph">Dias úteis: 9h - 20h</p>
+            <p class="header__paragraph">Finais de semana: 10h - 18h</p>
           </div>
           <p class="header__paragraph">Triple Peaks, 200 Success Avenue</p>
         </div>
       </header>
       <main class="content">
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">
             Confira algumas receitas que coletamos para seu lanchinho caseiro:
@@ -86,6 +79,7 @@
           <div class="recipes__videos">
             <div>
               <iframe
+                class="recipes__iframe"
                 src="https://www.youtube.com/embed/5yCqhY1D-VE?si=nGvMab6EnaDKNQle"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -97,9 +91,9 @@
                 How to Communicate <span class="time">~2 min</span>
               </p>
             </div>
-
             <div>
               <iframe
+                class="recipes__iframe"
                 src="https://www.youtube.com/embed/ikehX9o1JbI?si=2c2bpFe0cBt87y0u"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -113,7 +107,7 @@
             </div>
           </div>
         </section>
-        <section class="reservetion"></section>
+        <section class="reservetion" id="reservetion"></section>
       </main>
       <footer class="footer"></footer>
     </div>

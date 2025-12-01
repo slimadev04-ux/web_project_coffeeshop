@@ -4,9 +4,9 @@ body {
 
 .page {
   width: 100%;
-  max-width: 1600px;
+  min-width: 1600px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -14,12 +14,17 @@ body {
 }
 
 .header {
+  background-color: #ffffff;
   background: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
 }
 
 .nav {
@@ -47,38 +52,30 @@ body {
   font-weight: bold;
 }
 
-.header__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1600px;
-  margin-top: 50px;
-}
-
-.header__content-text {
-  display: flex;
-  flex-direction: column;
-  max-width: 709px;
-  margin-left: 80px;
-}
-
 .header__span-accent {
   color: #2f80ed;
   font-style: italic;
-  font-size: 58px;
   font-family: "Noto Serif", serif;
-  margin-top: 80px;
+  font-size: 58px;
+  line-height: 72px;
+  margin-top: 183px;
+  margin-left: 80px;
 }
 
 .header__title {
-  font-size: 58px;
+  font-size: 68px;
+  line-height: 72px;
   font-weight: 500;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  margin-left: 80px;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .header__description {
   line-height: 30px;
   max-width: 683px;
+  margin-left: 80px;
   margin-top: 28px;
   font-family: "Noto Serif";
 }
@@ -86,23 +83,26 @@ body {
 .header__image {
   width: 646px;
   height: 568px;
-  margin-right: 5px;
+  position: absolute;
+  right: 5px;
+  top: 124px;
 }
 
 .header__footer {
   display: flex;
-  align-items: end;
   justify-content: space-between;
+  align-items: flex-end;
+  margin: 0px 80px 40px 80px;
+  margin-top: auto;
   color: #838383;
   font-family: "Inter";
-  margin: 0px 80px 40px 80px;
-}
-.footer__list {
-  padding: 0px;
 }
 
-.footer__list-item {
-  list-style-type: none;
+.header__paragraph {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .recipes {
