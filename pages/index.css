@@ -10,7 +10,6 @@ body {
   font-weight: 500;
   line-height: 20px;
   min-height: 100vh;
-  min-width: 320px;
   max-width: 1600px;
 }
 
@@ -26,6 +25,8 @@ body {
   max-height: 800px;
   height: 100vh;
   position: relative;
+  min-height: 720px;
+  max-height: 800px;
 }
 
 .nav {
