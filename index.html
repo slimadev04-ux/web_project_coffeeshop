@@ -55,9 +55,8 @@
           na&nbsp;biblioteca&nbsp;Triple&nbsp;Peaks
         </h1>
         <p class="header__description">
-          Esta é a nossa zona de estudo! Temos aquele cafezinho para
-          energizar você e vibrações aconchegantes para soltar a
-          criatividade.
+          Esta é a nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
         </p>
         <img
           src="./images/inside_coffee_shop.png"
@@ -110,8 +109,79 @@
             </div>
           </div>
         </section>
-        <section class="reservetion" id="reservetion"></section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar&nbsp;uma&nbsp;mesa</h2>
+
+          <form
+            class="reservation__form form"
+            action="/processar-formulario"
+            method="POST"
+          >
+            <label class="form__label" for="nome">Nome *</label>
+            <input
+              type="text"
+              class="form__input"
+              name="nome"
+              minlength="3"
+              maxlength="20"
+              required
+              placeholder="Nome"
+              id="nome"
+            />
+
+            <label class="form__label" for="convidados"
+              >Número de convidados *</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              name="convidados"
+              min="1"
+              max="8"
+              required
+              placeholder="1-8"
+              id="convidados"
+            />
+
+            <label class="form__label" for="datahoralocal">Data e hora *</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              name="datahoralocal"
+              required
+              id="datahoralocal"
+            />
+
+            <label class="form__label" for="email">Seu e-mail *</label>
+            <input
+              type="email"
+              class="form__input"
+              name="email"
+              required
+              placeholder="email@email.com"
+              id="email"
+            />
+
+            <label class="form__label form__label_type_checkbox" for="termos">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                name="termos"
+                required
+                id="termos"
+              />
+              Eu concordo com os termos de uso
+            </label>
+
+            <button type="submit" class="form__button">
+              Reservar uma mesa
+            </button>
+          </form>
+        </section>
       </main>
+
+      <script src="script.js"></script>
       <footer class="footer"></footer>
     </div>
   </body>
