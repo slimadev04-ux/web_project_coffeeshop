@@ -1,249 +1,101 @@
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+@import url(../blocks/form.css);
+
 body {
   margin: 0;
 }
-
-.page {
-  width: 100%;
-  margin: 0 auto;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  min-height: 100vh;
-  max-width: 1600px;
-  min-width: 1100px;
-}
-
-.header {
-  background-color: #ffffff;
-  background: url("../images/background_header.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 720px;
-  max-height: 800px;
-  height: 100vh;
-  position: relative;
-  min-height: 720px;
-  max-height: 800px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px 80px 0px 30px;
-}
-
-.nav__logo {
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 20px;
-  list-style-type: none;
-}
-
-.nav__link {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header__span-accent {
-  color: #2f80ed;
-  font-style: italic;
-  font-family: "Noto Serif", serif;
-  font-size: 58px;
-  line-height: 72px;
-}
-
-.header__title {
-  font-size: 58px;
-  line-height: 72px;
-  font-weight: 500;
-  font-family: "Noto Serif", serif;
-  margin-left: 80px;
-  margin-top: 183px;
-  margin-bottom: 28px;
-  letter-spacing: 1px;
-}
-
-.header__description {
-  line-height: 30px;
-  max-width: 683px;
-  margin-left: 80px;
-  margin-top: 28px;
-  font-family: "Noto Serif", serif;
-}
-
-.header__image {
-  width: 646px;
-  height: 568px;
-  position: absolute;
-  right: 5px;
-  top: 124px;
-}
-
-.header__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 0px 80px 40px 80px;
-  margin-top: auto;
-  color: #6f6f6f;
-  font-family: "Inter";
-}
-
-.header__paragraph {
-  margin: 0;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.recipes {
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  background: url("../images/background_recipes.svg");
+.footer {
   background-color: #0a2850;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  padding: 0;
+  min-height: 350px;
+  overflow: hidden;
 }
 
-.recipes__title {
-  max-width: 580px;
-  padding: 100px 0px 24px 80px;
-  color: white;
-  font-size: 44px;
-  line-height: 52px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.recipes__subtitle {
-  color: white;
-  padding: 0px 0px 80px 80px;
-  max-width: 438px;
-  font-size: 20px;
-  line-height: 30px;
-  font-family: "Noto Serif";
-  margin: 0;
-}
-
-.recipes__videos {
-  margin: 0 auto;
+.footer__main-content {
   display: flex;
-  gap: 40px;
+  justify-content: flex-end;
+  padding: 60px 80px 0 80px;
+}
+
+.footer__logo-container {
+  background-color: #2f80ed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  margin-bottom: 215px;
+  transform: translate(-20%, -20%);
 }
 
-.description {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer__logo {
+  width: 105px;
+  height: 39px;
+  position: relative;
 }
 
-.time {
-  color: white;
-}
-
-.reservation {
-  background-color: #d9e7ff;
-  background-image: url(../images/background_reservation.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0 120px;
-}
-
-.reservation__title {
-  margin: 0 auto 80px;
-  max-width: 385px;
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-  text-align: center;
-}
-.reservation__form {
-  margin: 0 auto;
-  max-width: 385px;
+.footer__social-media {
   display: flex;
   flex-direction: column;
 }
 
-.form__label {
+.footer__column-heading {
   font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 8px;
+  margin: 0 0 20px 0;
 }
 
-.form__input {
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
   font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  height: 50px;
-  border: 1px solid #838383;
-  border-radius: 4px;
-
-  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 12px;
 }
 
-.form__input::placeholder {
-  color: #838383;
-}
+/* No seu blocks/footer.css */
 
-.form__label_type_checkbox {
-  margin-top: 20px;
-  margin-bottom: 60px;
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
 }
 
-.form__checkbox {
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  margin-right: 12px;
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
-.form__button {
-  background-color: #2f80ed;
-  color: #ffffff;
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__copyright {
   font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  height: 60px;
-  border: none;
-  border-radius: 4px;
-  transition: opacity 0.3s ease;
-  margin-bottom: 32px;
-}
-
-.form__button:hover {
-  opacity: 0.7;
-  cursor: pointer;
+  color: #a7a7a7;
+  margin: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
